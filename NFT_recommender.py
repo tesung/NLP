@@ -6,7 +6,11 @@ st.set_page_config(page_title="Reddit Thread Searcher", layout="wide")
 title = "Reddit NFT Thread Recommender"
 st.title(title)
 
-df = pd.read_csv("recommender_df")
+try:
+    df = pd.read_csv("recommender_df")
+    print('Success')
+except Failed as e:
+    print('Data load error: ',str(e))
     
 st.write('Welcome to my recommender system. Please choose a topic from the drop-down menu for several reddit link suggestions.')
 
