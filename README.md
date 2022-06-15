@@ -18,9 +18,7 @@ The total data set had over 8 million rows. There was a consistent problem with 
 
 ##### Algorithms
 
-I used SQLite as my connection to the local SQL database; Pandas as my main data processing tool since not a lot of cleaning was required, therefore I opted out of using PySpark; unittest package for unit testing. The main character of this project is the user-interactive web-app. I built my app using Streamlit. 
-
-I tried both count vectorizer and TFIDF vectorizer as well as LSA and NMF topic modeling. In addition, I ran KMeans cluster modeling and plotted an intertia graph to determine how many topics I should be aiming for (I ended up choosing to have 10 topics). Ultimately, I decdied to go with TFIDF vectorizer and NMF topic modeling as that returned the best topics. Count vectorizer + LSA returned topics that did not make as much sense. Lastly, I chose to use streamlit to deploy my recommender app.
+I tried both count vectorizer and TFIDF vectorizer as well as LSA and NMF topic modeling. In addition, I ran KMeans cluster modeling and plotted an inertia graph to determine how many topics I should be aiming for (I ended up choosing to have 10 topics). Ultimately, I decdied to go with TFIDF vectorizer and NMF topic modeling as that returned the best topics. Count vectorizer + LSA returned topics that did not make as much sense. Lastly, I used streamlit to deploy my recommender app.
 
 ##### Tools
 
